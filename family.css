@@ -1,0 +1,238 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 20% 30%, #2e1159 0%, #0d1b3e 50%, #050b18 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px 8% 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header dizayni */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00c6ff;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a.active, .nav a:hover {
+    color: #00c6ff;
+}
+
+.main-project-btn {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-project-btn:hover {
+    background-color: #00c6ff;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 198, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Sarlavha qismi */
+.page-title {
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* Kartochkalar to'plami (Grid/Flex) */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* 3D Kartochka sozlamalari */
+.card {
+    width: 260px;
+    height: 360px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Karta old qismi */
+.card-front {
+    background-color: #0f172a;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(5, 11, 24, 0.9), transparent);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Karta orqa qismi */
+.card-back {
+    padding: 30px 20px;
+    transform: rotateY(180deg);
+    background: linear-gradient(135deg, #1e1b4b 0%, #0284c7 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-back h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.card-back .age {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.card-back p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e2e8f0;
+}
+
+/* Footer qismi */
+.footer {
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #00c6ff;
+}
+
+/* Mobil moslashuvchanlik */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

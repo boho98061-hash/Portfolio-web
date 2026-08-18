@@ -1,24 +1,83 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <title>Biz haqimizda</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunyod - Men Haqimda</title>
+    <link rel="stylesheet" href="about.css">
 </head>
 <body>
-      <!-- Header qismi -->
+
+    <!-- Header qismi -->
     <header class="header">
-        <div class="logo">Bunyod</div>
-        <img src="images/Bunyod.png" alt="">
+        <div class="logo">Bunyod<span>.</span></div>
         <nav class="nav">
-            <a href="About.html">About</a>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="about.html" class="active">About</a>
             <a href="Family.html">Family</a>
-            <a href="#">Projects</a>
+            <a href="projects.html">Projects</a>
             <a href="#">Contacts</a>
-            <a href="about.html">Family</a>
         </nav>
         <button class="main-project-btn">Asosiy loyiha</button>
     </header>
+
+    <!-- Asosiy Mazmun -->
+    <main class="about-container">
+        
+        <section class="about-intro">
+            <h1>Men haqimda</h1>
+            <p>Men PDP Junior Bektemir filialida dasturlash asoslarini puxta o'rganmoqdaman. Zamonaviy va chiroyli veb-saytlar yaratishga qiziqaman.</p>
+        </section>
+
+        <!-- Bilimlar va ko'nikmalar qismi -->
+        <section class="skills-section">
+            <h2>Mening bilimlarim</h2>
+            
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <div class="skill-icon">HTML5</div>
+                    <h3>HTML5</h3>
+                    <p>Veb-sahifalarning semantik va to'g'ri strukturasini tuzish.</p>
+                    <div class="progress-bar">
+                        <div class="progress html-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">CSS3</div>
+                    <h3>CSS3 & Flexbox</h3>
+                    <p>Zamonaviy dizayn, animatsiyalar va moslashuvchan (Responsive) tartiblar.</p>
+                    <div class="progress-bar">
+                        <div class="progress css-bar"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Interaktiv elementlar, mantiq va sahifa dinamikasi bilan ishlash.</p>
+                    <div class="progress-bar">
+                        <div class="progress js-bar"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer qismi -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Bunyod Portfolio. Barcha huquqlar himoyalangan.</p>
+            <div class="socials">
+                <a href="#">Telegram</a>
+                <a href="#">Instagram</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

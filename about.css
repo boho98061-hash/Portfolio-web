@@ -1,0 +1,204 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 20% 30%, #2e1159 0%, #0d1b3e 50%, #050b18 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px 8% 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header dizayni */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00c6ff;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a.active, .nav a:hover {
+    color: #00c6ff;
+}
+
+.main-project-btn {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-project-btn:hover {
+    background-color: #00c6ff;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 198, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* About bo'limi */
+.about-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    width: 100%;
+}
+
+.about-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-intro h1 {
+    font-size: 36px;
+    color: #00c6ff;
+    margin-bottom: 15px;
+}
+
+.about-intro p {
+    font-size: 18px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+/* Bilimlar card lari */
+.skills-section h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #00c6ff;
+    box-shadow: 0 8px 25px rgba(0, 198, 255, 0.2);
+}
+
+.skill-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    border-radius: 10px;
+}
+
+.html-bar { width: 90%; }
+.css-bar { width: 80%; }
+.js-bar { width: 60%; }
+
+/* Footer qismi */
+.footer {
+    margin-top: 60px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #00c6ff;
+}
+
+/* Mobil moslashuvchanlik */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

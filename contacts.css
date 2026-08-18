@@ -1,0 +1,263 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 20% 30%, #2e1159 0%, #0d1b3e 50%, #050b18 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px 8% 0 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header dizayni */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #00c6ff;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav a.active, .nav a:hover {
+    color: #00c6ff;
+}
+
+.main-project-btn {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.main-project-btn:hover {
+    background-color: #00c6ff;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 198, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Sarlavha bo'limi */
+.page-title {
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    color: #00c6ff;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* Kontaktlar konteyneri */
+.contact-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Chap tomondagi aloqa ma'lumotlari */
+.contact-info {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.contact-info > p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info-icon {
+    font-size: 24px;
+    background: rgba(0, 198, 255, 0.1);
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.info-item h4 {
+    font-size: 16px;
+    color: #e2e8f0;
+}
+
+.info-item p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Onmg tomondagi forma */
+.contact-form {
+    flex: 1.2;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #00c6ff;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Footer qismi */
+.footer {
+    margin-top: 50px;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: #00c6ff;
+}
+
+/* Mobil moslashuvchanlik */
+@media (max-width: 850px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}

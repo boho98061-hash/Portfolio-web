@@ -1,66 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bunyod - Oilam</title>
+    <link rel="stylesheet" href="family.css">
 </head>
 <body>
-<header class="header">
-        <div class="logo">Bunyod</div>
-        <nav class="nav">
-            <a href="About.html">About</a>
-            <a href="Family.html">Family</a>
-            <a href="#">Projects</a>
-            <a href="#">Contacts</a>
 
-    <!-- <a href="about.html">About</a> -->
+    <!-- Header qismi -->
+    <header class="header">
+        <div class="logo">Bunyod<span>.</span></div>
+        <nav class="nav">
+            <a href="index.html">Bosh sahifa</a>
+            <a href="About.html">About</a>
+            <a href="Family.html" class="active">Family</a>
+            <a href="projects.html">Projects</a>
+            <a href="contacts.html">Contacts</a>
         </nav>
         <button class="main-project-btn">Asosiy loyiha</button>
     </header>
-    <a href="index.html">about</a>
-     <!-- <div class="box">Box</div> -->
+
+    <!-- Sarlavha qismi -->
+    <section class="page-title">
+        <h1>Mening Oilam</h1>
+        <p>A'zolar haqida ma'lumot olish uchun kartochka ustiga sichqonchani olib keling</p>
+    </section>
+
+    <!-- Kartochkalar konteyneri -->
+    <main class="container">
+
+        <!-- Otam -->
         <div class="card">
             <div class="card-inner">
                 <div class="card-front">
-                    <img class="img" src="images/Adam.png" alt="">
-                    
+                    <img class="img" src="images/Adam.png" alt="Otam Boxodir">
+                    <span class="card-label">Otam</span>
                 </div>
                 <div class="card-back">
-                    <h2>Bu mani adam ismlari Boxodir 41 yoshla adam biznesmenla</h2>
+                    <h2>Boxodir</h2>
+                    <span class="age">41 yosh</span>
+                    <p>Otam biznesmenlar va biz uchun har doim o'rnak bo'lib keladilar.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Onam -->
         <div class="card">
             <div class="card-inner">
                 <div class="card-front">
-                    <img class="img" src="images/Onam.png" alt="">
+                    <img class="img" src="images/Onam.png" alt="Onam Feruza">
+                    <span class="card-label">Onam</span>
                 </div>
                 <div class="card-back">
-                    <h2>Bu mani onam ismlari Feruza 36 yoshla </h2>
+                    <h2>Feruza</h2>
+                    <span class="age">36 yosh</span>
+                    <p>Onam mehribon va oilamizning ko'rki.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Akam -->
         <div class="card">
             <div class="card-inner">
                 <div class="card-front">
-                    <img class="img" src="images/Akam.png" alt="">
+                    <img class="img" src="images/Akam.png" alt="Akam Bexruz">
+                    <span class="card-label">Akam</span>
                 </div>
                 <div class="card-back">
-                    <h2>Bu mani akam ismlari Bexruz 15 yoshla bosh vaqtarida ingliz tili bilan shugillanadila va sportga boradila</h2>
+                    <h2>Bexruz</h2>
+                    <span class="age">15 yosh</span>
+                    <p>Bo'sh vaqtlarida ingliz tili bilan shug'ullanadilar va sportga boradilar.</p>
                 </div>
             </div>
         </div>
+
+        <!-- Ukam -->
         <div class="card">
             <div class="card-inner">
                 <div class="card-front">
-                    <img class="img" src="images/Ukam.png" alt="">
+                    <img class="img" src="images/Ukam.png" alt="Ukam Muhammad Yusuf">
+                    <span class="card-label">Ukam</span>
                 </div>
                 <div class="card-back">
-                    <h2>Bu mani ukam ismi Muhammad Yusuf 3 yosh rassa aqlli ukam</h2>
+                    <h2>Muhammad Yusuf</h2>
+                    <span class="age">3 yosh</span>
+                    <p>Juda ham aqlli, sho'x va quvnoq ukam.</p>
                 </div>
             </div>
         </div>
+
+    </main>
+
+    <!-- Footer qismi -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Bunyod Portfolio. Barcha huquqlar himoyalangan.</p>
+            <div class="socials">
+                <a href="#">Telegram</a>
+                <a href="#">Instagram</a>
+                <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
