@@ -1,0 +1,211 @@
+/* Umumiy sozlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at 20% 30%, #2e1159 0%, #0d1b3e 50%, #050b18 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px 60px;
+    overflow-x: hidden;
+}
+
+/* Header dizayni */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 35px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #60a5fa;
+}
+
+.main-project-btn {
+    background-color: #ffffff;
+    color: #111827;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main-project-btn:hover {
+    background-color: #f3f4f6;
+}
+
+/* Hero qism dizayni */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hero-text h1 {
+    font-size: 34px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.info-btn {
+    background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 114, 255, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 114, 255, 0.6);
+}
+
+/* Rasm qismi (Aylanma ramka) */
+.hero-image {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(139, 92, 246, 0.6);
+    box-shadow: 0 0 40px rgba(79, 70, 229, 0.5);
+    flex-shrink: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  background-color: cadetblue;
+  color: #fff;
+  margin: 100px auto;
+  /* background: red; */
+  /* transform: translate(X,Y); */
+  /* transform: translateX(200px);
+  transform: translateY(200px); */
+  /* transform: translateX(-100px); */
+  /* transform: translateY(100px); */
+  /* transform: scale(1.4); */
+  transition: 0.4s ease;
+  transform-style: preserve-3d;
+  /* transform-origin: top right; */
+  /* transform: skew(30deg); */
+}
+
+.box:hover {
+  transform: scaleZ(1.4);
+  transform: rotateZ(30deg);
+
+  /* transform: translate(-20px,-40px); */
+  /* transform: rotate(90deg); */
+  /* transform: skew(-30deg, -20deg); */
+  /* transform: skewY(20deg) */
+  /* transform:translateX(10px) rotate(45deg) scale(2) ; */
+}
+
+/* 2D vs 3D */
+
+/* 2D: X va Y o'qi boyicha */
+
+/* 3D: X, Y va Z oqi boyicha ishlaydi */
+
+.card {
+  margin: 0px auto;
+  width: 250px;
+  perspective: 1000px;
+  height: 300px;
+  border-radius: 20px;
+}
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(238, 239, 242);
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+.card-front img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: top;
+}
+.card-back {
+  padding: 20px;
+  transform: rotateY(180deg);
+  color: #fff;
+  background-color: rgb(6, 106, 207);
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
