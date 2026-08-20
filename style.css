@@ -116,6 +116,7 @@ body {
 }
 
 .info-btn {
+  text-decoration: none;
   background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
   color: #ffffff;
   border: none;
