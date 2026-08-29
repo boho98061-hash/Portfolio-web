@@ -53,6 +53,7 @@ body {
 }
 
 .main-project-btn {
+    text-decoration: none;
     background-color: #ffffff;
     color: #0f172a;
     border: none;
